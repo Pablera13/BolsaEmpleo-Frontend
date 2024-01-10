@@ -1,0 +1,205 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: medium;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 2px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 250;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.tablebtn{
+  border-radius: 2px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 250;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white; 
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 6px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+.footer{
+  background-color: black;
+  padding: 6px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilo base del input */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Cambio de estilo cuando el input está enfocado */
+input:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+table {
+  width: fit-content;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: gold;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"] {
+  display: inline-block;
+  width: calc(50% - 5px); /* Resta 5 píxeles para tener en cuenta el espacio entre los inputs */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Incluye el padding en el ancho total del input */
+}
+
+.input-container input[type="submit"] {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.offer-container{
+  margin: 10px;
+  border: 4px solid yellow;
+}
+
+
+.modalOffer{
+  width: 300px;
+  height: 100px;
+  
+}
+.formaplly{
+  width: 300px;
+  height: 300px;
+}
+.contentc{
+  display: flex;
+  flex-direction: row;
+  position: left;
+  justify-content: space-around;
+}
+.infoc{
+  margin: 1px;
+	border: 2px solid yellow;
+  border-radius: 10px;
+  width: 20%;
+}
+.listformaciones{
+  width: 30%;
+}
+.listocanOfertas{
+  width: 30%;
+}
+
+.btn-skill.inactive{
+background-color: black; 
+}
+
+.btn-skill.active{
+  background-color: orange; 
+}
